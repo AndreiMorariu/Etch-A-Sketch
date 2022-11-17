@@ -24,7 +24,9 @@ generateGrid();
 btnChange.addEventListener("click", function () {
   container.innerHTML = "";
   const size = prompt("Enter the size for your grid");
-  generateGrid(size);
+  console.log(size);
+  if (size == "") generateGrid(16);
+  else generateGrid(size);
 });
 
 btnReset.addEventListener("click", function () {
