@@ -28,5 +28,6 @@ btnChange.addEventListener("click", function () {
 });
 
 btnReset.addEventListener("click", function () {
-  location.reload();
+  const elements = document.querySelectorAll(".element");
+  elements.forEach((el) => (el.style.backgroundColor = "#fff"));
 });
